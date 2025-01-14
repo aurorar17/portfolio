@@ -1,0 +1,33 @@
+body {
+  background-image: url("../assets/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-section {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.star {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
