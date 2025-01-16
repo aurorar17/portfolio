@@ -15,34 +15,82 @@
 <body>
     <header>
         <section class="header-section">
-            <div>
+            <div class="header-content">
                 <h1>Aurora Roilo</h1>
+                <button id="header-button">resume</button>
             </div>
-            <div>
+            <div class="social-media">
                 <nav>
                     <ul>
-
+                        <li><img src="./assets/call.png" alt="call icon"></li>
+                        <li><img src="./assets/email.png" alt="email icon"></li>
+                        <li><img src="./assets/github.png" alt="github icon"></li>
+                        <li><img src="./assets/linkedin.png" alt="linkedin icon"></li>
+                        <li><img src="./assets/figma.png" alt="figma icon"></li>
                     </ul>
                 </nav>
             </div>
         </section>
-
     </header>
-    <script>
-        // function createStar() {
-        //     const star = document.createElement('div');
-        //     star.classList.add('star');
-        //     star.style.top = Math.random() * window.innerHeight + 'px';
-        //     star.style.left = Math.random() * window.innerWidth + 'px';
-        //     document.body.appendChild(star);
+    <main>
+        <section class="presentation-section">
+            <div class="text-container">
+                <p><strong>I am a front-end developer 👩🏻‍💻</strong></p>
+                <p style="margin-top: 10%;"><strong>Welcome to my portfolio!</strong></p>
+            </div>
+            <div class="gif-container">
+                <div class="overlay"></div>
+                <img src="./assets/presentation.gif" alt="Presentation GIF">
+            </div>
+        </section>
+        <div class="mobile-menu-section">
+            <nav id="mobile-menu">
+                <button>Technologies</button>
+                <button>Projects</button>
+                <button>Experience</button>
+            </nav>
+        </div>
+        <section class="carousel-section">
+            <div class="carousel-container">
+                <div class="technologies-container">
+                    <img src="./assets/html.png" alt="HTML icon">
+                    <img src="./assets/css.png" alt="CSS icon">
+                    <img src="./assets/javascript.png" alt="JavaScript icon">
+                    <img src="./assets/react.png" alt="React icon">
+                </div>
+            </div>
+        </section>
+        <section>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos temporibus obcaecati commodi perferendis laborum illo, enim porro maiores laudantium unde officiis cum vitae ad corrupti non itaque reiciendis dolore aliquid!</p>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-section">
+            <div class="footer-content">
+                <p>© 2021 Aurora Roilo</p>
+            </div>
+        </section>
 
-        //     setTimeout(() => {
-        //         star.remove();
-        //     }, 2000);
-        // }
 
-        // setInterval(createStar, 30); 
-    </script>
+
+
+
+        <script src="./scripts/carousel.js"></script>
+        <script>
+            // function createStar() {
+            //     const star = document.createElement('div');
+            //     star.classList.add('star');
+            //     star.style.top = Math.random() * window.innerHeight + 'px';
+            //     star.style.left = Math.random() * window.innerWidth + 'px';
+            //     document.body.appendChild(star);
+
+            //     setTimeout(() => {
+            //         star.remove();
+            //     }, 2000);
+            // }
+
+            // setInterval(createStar, 30); 
+        </script>
 </body>
 
 </html>

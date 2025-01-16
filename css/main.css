@@ -44,11 +44,77 @@ body {
   position: fixed;
 }
 
-.contact-item {
-  display: flex;
-  align-items: center;
+/* presentation section */
+
+.gif-container {
+  position: relative; /* Posiziona il contenitore in modo relativo */
+  width: 150px; /* Larghezza del frame tondo */
+  height: 150px; /* Altezza del frame tondo */
+  border-radius: 50%; /* Rende il frame tondo */
+  overflow: hidden; /* Nasconde le parti della GIF fuori dal frame */
+  margin: 0 auto; /* Centra il frame */
 }
 
-.contact-item img {
-  margin-right: 10px;
+.gif-container img {
+  width: 100%; /* Adatta la GIF alla larghezza del frame */
+  height: 100%; /* Adatta la GIF all'altezza del frame */
+  object-fit: cover; /* Assicura che la GIF riempia il frame mantenendo le proporzioni */
+}
+
+.gif-container .overlay {
+  position: absolute; /* Posiziona l'overlay in modo assoluto */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Colore nero semi-trasparente */
+  border-radius: 50%; /* Mantiene il frame tondo */
+}
+
+.presentation-section h2,
+.presentation-section p {
+  color: white; /* Colore del testo bianco */
+  opacity: 0; /* Inizialmente invisibile */
+  transform: translateY(-20px); /* Posizione iniziale sopra */
+  animation: dropIn 1s forwards; /* Animazione di caduta */
+}
+
+.presentation-section h2 {
+  animation-delay: 0.5s; /* Ritardo per l'animazione di h2 */
+}
+
+.presentation-section p {
+  animation-delay: 1s; /* Ritardo per l'animazione di p */
+}
+
+@keyframes dropIn {
+  to {
+    opacity: 1; /* Visibile */
+    transform: translateY(0); /* Posizione finale */
+  }
+}
+
+/* technologies section */
+
+.carousel-container {
+  width: 80%; /* Puoi modificare la percentuale per adattarla meglio al tuo layout */
+  max-width: 1200px; /* Limita la larghezza massima su schermi grandi */
+  margin: 0 auto; /* Centra il contenitore */
+  overflow: hidden; /* Nasconde contenuti fuori dal contenitore */
+  position: relative; /* Per eventuali modifiche future */
+}
+
+.technologies-container img {
+  width: 80px; /* Mantieni le dimensioni coerenti */
+  height: auto;
+  margin: 0 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

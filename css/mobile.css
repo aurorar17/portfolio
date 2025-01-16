@@ -1,20 +1,105 @@
 @media screen and (max-width: 1071px) {
+  /* general */
+
+  main {
+    margin-top: 50%;
+  }
+
+  /* header-section */
+
   .header-section {
     padding: 4%;
+    position: fixed;
+    width: 100%; /* Assicura che l'header occupi l'intera larghezza */
+    top: 0; /* Posiziona l'header in cima alla pagina */
+    left: 0; /* Allinea l'header a sinistra */
+    z-index: 1000;
   }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+  }
+
   h1 {
     font-weight: 1000;
     font-style: normal;
     font-size: 2rem;
-    margin-left: 2%;
+  }
+
+  #header-button {
+    border-radius: 10px; /* Bordi tondeggianti */
+    padding: 5px 10px; /* Padding per dimensionare il pulsante */
+    border: white 1px solid; /* Rimuove il bordo predefinito */
+    background-color: transparent;
+    color: white; /* Colore del testo */
+    margin-left: 1%;
   }
 
   .contact-item {
-    font-size: 0.975rem;
-    margin-left: 2%;
+    margin-left: 0 2%;
   }
 
-  .contact-item img {
-    width: 20px;
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav ul li img {
+    margin-top: 30%;
+    width: 30px; /* Imposta la larghezza delle immagini */
+    height: 30px; /* Imposta l'altezza delle immagini */
+    object-fit: cover; /* Assicura che le immagini mantengano le proporzioni */
+  }
+
+  /* presentation-section */
+
+  .presentation-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .text-container {
+    font-size: 1.6rem;
+    margin-top: 10%;
+  }
+
+  .gif-container {
+    margin-top: 10%;
+  }
+
+  /* mobile menu section */
+
+  .mobile-menu-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  #mobile-menu {
+    display: flex;
+    gap: 10px;
+    margin-top: 5%;
+  }
+
+  #mobile-menu button {
+    border-radius: 10px; /* Bordi tondeggianti */
+    padding: 5px 10px; /* Padding per dimensionare il pulsante */
+    border: white 1px solid; /* Rimuove il bordo predefinito */
+    background-color: transparent;
+    color: white; /* Colore del testo */
+  }
+
+  /* technologies section */
+
+  .technologies-container img {
+    width: 50px; /* Dimensione delle icone per mobile */
+    height: auto;
   }
 }
