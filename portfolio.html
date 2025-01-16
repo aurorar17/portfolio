@@ -16,8 +16,15 @@
     <header>
         <section class="header-section">
             <div class="header-content">
-                <h1>Aurora Roilo</h1>
-                <button id="header-button">resume</button>
+                <div class="header-top">
+                    <h1>Aurora Roilo</h1>
+                    <button id="header-button">Resume</button>
+                </div>
+                <div class="desktop-menu-section">
+                    <button onclick="scrollToSection('technologies-section')">Technologies</button>
+                    <button onclick="scrollToSection('projects-section')">Projects</button>
+                    <button onclick="scrollToSection('experience-section')">Experience</button>
+                </div>
             </div>
             <div class="social-media-mobile">
                 <nav>
@@ -56,9 +63,9 @@
         </section>
         <div class="mobile-menu-section">
             <nav id="mobile-menu">
-                <button onclick="location.href='#technologies-section'">Technologies</button>
-                <button onclick="location.href='#projects-section'">Projects</button>
-                <button onclick="location.href='#experience-section'">Experience</button>
+                <button onclick="scrollToSection('technologies-section')">Technologies</button>
+                <button onclick="scrollToSection('projects-section')">Projects</button>
+                <button onclick="scrollToSection('experience-section')">Experience</button>
             </nav>
         </div>
         <section class="carousel-section" id="technologies-section">
@@ -149,11 +156,6 @@
                 <p>© 2024 Aurora Roilo</p>
             </div>
         </section>
-
-
-
-
-
         <script src="./scripts/carousel.js"></script>
         <script>
             function createStar() {
@@ -167,8 +169,20 @@
                     star.remove();
                 }, 2000);
             }
-
             setInterval(createStar, 200); 
+        </script>
+        <script>
+            function scrollToSection(id) {
+                const element = document.getElementById(id);
+                const headerOffset = 150;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
         </script>
 </body>
 

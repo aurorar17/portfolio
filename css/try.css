@@ -1,20 +1,20 @@
 .carousel-container {
-  width: 80%; /* Puoi modificare la percentuale per adattarla meglio al tuo layout */
-  max-width: 1200px; /* Limita la larghezza massima su schermi grandi */
-  margin: 0 auto; /* Centra il contenitore */
-  overflow: hidden; /* Nasconde contenuti fuori dal contenitore */
-  position: relative; /* Per eventuali modifiche future */
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .technologies-container {
   display: flex;
-  flex-wrap: nowrap; /* Impedisce che gli elementi vadano a capo */
-  overflow: hidden; /* Nasconde gli elementi fuori dal contenitore */
-  transition: transform 0.5s ease-in-out; /* Animazione fluida per lo scorrimento */
+  flex-wrap: nowrap;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
 }
 .technologies-container img {
-  flex: 0 0 auto; /* Impedisce che le immagini si ridimensionino */
-  width: 80px; /* Larghezza delle immagini */
-  height: auto; /* Mantiene il rapporto d'aspetto */
-  margin-right: 10px; /* Spaziatura tra le immagini */
+  flex: 0 0 auto;
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
 }

@@ -55,72 +55,69 @@ h3 a {
 /* presentation section */
 
 .gif-container {
-  position: relative; /* Posiziona il contenitore in modo relativo */
-  width: 150px; /* Larghezza del frame tondo */
-  height: 150px; /* Altezza del frame tondo */
-  border-radius: 50%; /* Rende il frame tondo */
-  overflow: hidden; /* Nasconde le parti della GIF fuori dal frame */
-  margin: 0 auto; /* Centra il frame */
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .gif-container img {
-  width: 100%; /* Adatta la GIF alla larghezza del frame */
-  height: 100%; /* Adatta la GIF all'altezza del frame */
-  object-fit: cover; /* Assicura che la GIF riempia il frame mantenendo le proporzioni */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .gif-container .overlay {
-  position: absolute; /* Posiziona l'overlay in modo assoluto */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* Colore nero semi-trasparente */
-  border-radius: 50%; /* Mantiene il frame tondo */
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
 }
 
 .presentation-section h2,
 .presentation-section p {
-  color: white; /* Colore del testo bianco */
-  opacity: 0; /* Inizialmente invisibile */
-  transform: translateY(-20px); /* Posizione iniziale sopra */
-  animation: dropIn 1s forwards; /* Animazione di caduta */
+  color: white;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: dropIn 1s forwards;
 }
 
 .presentation-section h2 {
-  animation-delay: 0.5s; /* Ritardo per l'animazione di h2 */
+  animation-delay: 0.5s;
 }
 
 .presentation-section p {
-  animation-delay: 1s; /* Ritardo per l'animazione di p */
+  animation-delay: 1s;
 }
 
 @keyframes dropIn {
   to {
-    opacity: 1; /* Visibile */
-    transform: translateY(0); /* Posizione finale */
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 /* technologies section */
 
-/* Container per il carosello */
 .carousel-container {
-  width: 100%; /* Larghezza del contenitore */
-  overflow: hidden; /* Nasconde gli elementi che escono dal contenitore */
+  width: 100%;
+  overflow: hidden;
 }
 
-/* Contenitore degli elementi (immagini) */
 .technologies-container {
   display: flex;
-  transition: transform 0.5s ease-in-out; /* Transizione fluida per lo scorrimento */
+  transition: transform 0.5s ease-in-out;
 }
 
-/* Immagini nel carosello */
 .technologies-container img {
-  width: 80px; /* Larghezza delle immagini */
+  width: 80px;
   height: auto;
-  margin-right: 20px; /* Spaziatura tra le immagini */
+  margin-right: 20px;
 }
 
 @keyframes scroll {
@@ -141,14 +138,14 @@ h3 a {
 }
 
 a {
-  text-decoration: none; /* Rimuove la sottolineatura */
-  color: inherit; /* Mantiene il colore del testo */
+  text-decoration: none;
+  color: inherit;
 }
 
 .clickable-div {
-  display: flex; /* Per layout orizzontale */
-  align-items: center; /* Allinea gli elementi al centro */
-  justify-content: space-between; /* Spaziatura tra titolo e immagini */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Footer Section */
