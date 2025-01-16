@@ -5,7 +5,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
   font-family: "Baloo Bhai 2", serif;
 }
 
@@ -35,10 +34,19 @@ body {
   }
 }
 
+.contacts-list a {
+  color: white;
+  list-style: none;
+}
+
+h3 a {
+  color: white;
+}
+
 /* Header Section */
 
 .header-section {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   width: 100%;
   position: fixed;
@@ -96,18 +104,23 @@ body {
 
 /* technologies section */
 
+/* Container per il carosello */
 .carousel-container {
-  width: 80%; /* Puoi modificare la percentuale per adattarla meglio al tuo layout */
-  max-width: 1200px; /* Limita la larghezza massima su schermi grandi */
-  margin: 0 auto; /* Centra il contenitore */
-  overflow: hidden; /* Nasconde contenuti fuori dal contenitore */
-  position: relative; /* Per eventuali modifiche future */
+  width: 100%; /* Larghezza del contenitore */
+  overflow: hidden; /* Nasconde gli elementi che escono dal contenitore */
 }
 
+/* Contenitore degli elementi (immagini) */
+.technologies-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Transizione fluida per lo scorrimento */
+}
+
+/* Immagini nel carosello */
 .technologies-container img {
-  width: 80px; /* Mantieni le dimensioni coerenti */
+  width: 80px; /* Larghezza delle immagini */
   height: auto;
-  margin: 0 10px;
+  margin-right: 20px; /* Spaziatura tra le immagini */
 }
 
 @keyframes scroll {
@@ -117,4 +130,31 @@ body {
   100% {
     transform: translateX(-100%);
   }
+}
+
+/* projects section */
+
+.projects-section {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+}
+
+a {
+  text-decoration: none; /* Rimuove la sottolineatura */
+  color: inherit; /* Mantiene il colore del testo */
+}
+
+.clickable-div {
+  display: flex; /* Per layout orizzontale */
+  align-items: center; /* Allinea gli elementi al centro */
+  justify-content: space-between; /* Spaziatura tra titolo e immagini */
+}
+
+/* Footer Section */
+
+.footer-section {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
 }

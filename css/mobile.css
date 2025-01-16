@@ -1,8 +1,18 @@
-@media screen and (max-width: 1071px) {
+@media screen and (max-width: 1024px) {
   /* general */
 
   main {
     margin-top: 50%;
+  }
+
+  h2 {
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 2%;
   }
 
   /* header-section */
@@ -36,6 +46,7 @@
     background-color: transparent;
     color: white; /* Colore del testo */
     margin-left: 1%;
+    font-weight: bold;
   }
 
   .contact-item {
@@ -85,21 +96,90 @@
   #mobile-menu {
     display: flex;
     gap: 10px;
-    margin-top: 5%;
+    margin-top: 10%;
   }
 
   #mobile-menu button {
     border-radius: 10px; /* Bordi tondeggianti */
     padding: 5px 10px; /* Padding per dimensionare il pulsante */
-    border: white 1px solid; /* Rimuove il bordo predefinito */
+    border: white 2px solid; /* Rimuove il bordo predefinito */
     background-color: transparent;
     color: white; /* Colore del testo */
+    font-weight: bold;
   }
 
   /* technologies section */
 
   .technologies-container img {
-    width: 50px; /* Dimensione delle icone per mobile */
-    height: auto;
+    width: 50px;
+    height: 50px;
+  }
+
+  /* projects section */
+
+  .projects-section {
+    padding: 2%;
+  }
+
+  .clickable-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+    margin: 5%;
+    gap: 30px; /* Usa gap per gestire la distanza tra le immagini */
+  }
+
+  .clickable-div img {
+    width: 25px;
+    height: 24px;
+    margin: 0; /* Rimuovi eventuali margini predefiniti */
+  }
+
+  .project-description {
+    margin: 5%;
+  }
+
+  .space {
+    margin-top: 5%;
+    padding: 2%;
+    background-color: none;
+  }
+
+  /* footer section */
+
+  ul {
+    list-style: none; /* Rimuove i punti elenco puntati */
+    padding: 0; /* Rimuove il padding predefinito */
+    margin: 0; /* Rimuove il margine predefinito */
+  }
+
+  #contacts-container {
+    display: flex;
+    justify-content: left;
+    margin-left: 5%;
+  }
+
+  #contacts-container img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: right;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+
+  #footer-title {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  .footer-section {
+    padding: 4%;
   }
 }

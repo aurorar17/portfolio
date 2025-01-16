@@ -1,6 +1,10 @@
 @media screen and (min-width: 1024px) {
   /* general */
 
+  body {
+    cursor: url("./assets/square-cursor.png"), auto;
+  }
+
   .mobile-menu-section {
     display: none;
   }
