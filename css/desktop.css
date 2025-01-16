@@ -9,11 +9,33 @@
     display: none;
   }
 
+  /* header section */
+
+  .header-section {
+    padding: 4% 4%;
+  }
+
   h1 {
     font-weight: 1000;
     font-style: normal;
-    font-size: 2.25rem;
-    margin-left: 8%;
+    font-size: 4rem;
+  }
+
+  /* aside section */
+
+  .social-media-mobile {
+    display: none;
+  }
+
+  .social-media-desktop {
+    display: flex;
+    justify-content: right;
+    margin-top: 10%;
+  }
+
+  .social-media-desktop img {
+    width: 50px;
+    height: auto;
   }
 
   /* technolies section */
@@ -21,5 +43,13 @@
   .technologies-container img {
     width: 100px; /* Dimensione delle icone per desktop */
     height: auto;
+  }
+
+  main {
+    display: none;
+  }
+
+  footer {
+    display: none;
   }
 }

@@ -15,14 +15,18 @@
     margin-bottom: 2%;
   }
 
+  .social-media-desktop {
+    display: none;
+  }
+
   /* header-section */
 
   .header-section {
     padding: 4%;
     position: fixed;
-    width: 100%; /* Assicura che l'header occupi l'intera larghezza */
-    top: 0; /* Posiziona l'header in cima alla pagina */
-    left: 0; /* Allinea l'header a sinistra */
+    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 1000;
   }
 
@@ -40,11 +44,11 @@
   }
 
   #header-button {
-    border-radius: 10px; /* Bordi tondeggianti */
-    padding: 5px 10px; /* Padding per dimensionare il pulsante */
-    border: white 1px solid; /* Rimuove il bordo predefinito */
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: white 1px solid;
     background-color: transparent;
-    color: white; /* Colore del testo */
+    color: white;
     margin-left: 1%;
     font-weight: bold;
   }
@@ -62,9 +66,9 @@
 
   nav ul li img {
     margin-top: 30%;
-    width: 30px; /* Imposta la larghezza delle immagini */
-    height: 30px; /* Imposta l'altezza delle immagini */
-    object-fit: cover; /* Assicura che le immagini mantengano le proporzioni */
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
   }
 
   /* presentation-section */
@@ -100,11 +104,11 @@
   }
 
   #mobile-menu button {
-    border-radius: 10px; /* Bordi tondeggianti */
-    padding: 5px 10px; /* Padding per dimensionare il pulsante */
-    border: white 2px solid; /* Rimuove il bordo predefinito */
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: white 2px solid;
     background-color: transparent;
-    color: white; /* Colore del testo */
+    color: white;
     font-weight: bold;
   }
 
@@ -124,15 +128,15 @@
   .clickable-div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+    justify-content: space-between;
     margin: 5%;
-    gap: 30px; /* Usa gap per gestire la distanza tra le immagini */
+    gap: 30px;
   }
 
   .clickable-div img {
     width: 25px;
     height: 24px;
-    margin: 0; /* Rimuovi eventuali margini predefiniti */
+    margin: 0;
   }
 
   .project-description {
@@ -148,9 +152,9 @@
   /* footer section */
 
   ul {
-    list-style: none; /* Rimuove i punti elenco puntati */
-    padding: 0; /* Rimuove il padding predefinito */
-    margin: 0; /* Rimuove il margine predefinito */
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   #contacts-container {
